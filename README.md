@@ -1,5 +1,7 @@
 # My Educational Journey
 
+This is a project to be submitted to Jajal Medical, Vadodara.
+
 ## Files
 
 [index.html](./index.html): to store static page content
@@ -10,4 +12,4 @@
 
 ## URL
 
-[https://sharanam.github.io/educational-journey](sharanam.github.io/educational-journey)
+[sharanam.github.io/educational-journey](https://sharanam.github.io/educational-journey)
