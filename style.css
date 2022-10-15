@@ -1,0 +1,264 @@
+/* base styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 13pt;
+}
+
+
+/* theme */
+
+body {
+    background-color: #86F5A3;
+    overflow-y: scroll;
+}
+
+
+/* header */
+
+header {
+    background-color: #69A5F5;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    gap: 0.5em;
+}
+
+header p.logo {
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+
+/* container */
+
+.container {
+    width: clamp(300px, 800px, 95vw);
+}
+
+main#home>* {
+    padding: 0.3em 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* Content */
+
+main#home div.hero {
+    display: relative;
+    /* background-color: #F5565A; */
+    background-color: #56f5f5;
+}
+
+main#home section>div.container>div {
+    /* background-color: #EAF551; */
+    padding: 0.5em;
+    border-radius: 0.5em;
+    cursor: default;
+    margin: 15px 0;
+    transition: background-color 0.5s;
+    position: relative;
+}
+
+div.overview {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+main#home>section>div.container>*:nth-child(2n) {
+    width: 50%;
+    background-color: #f5e645;
+}
+
+main#home>section>div.container>*:nth-child(2n+1) {
+    margin-left: 50%;
+    width: 50%;
+    background-color: #a6f545;
+}
+
+main#home>section>div.container>*:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 108%;
+    border-left: 2px solid goldenrod;
+}
+
+main#home>section>div.container>*:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    border-left: 2px solid goldenrod;
+}
+
+main#home>section>div.container>*:nth-child(2n+1)::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -2px;
+    height: 108%;
+    border-right: 2px solid goldenrod;
+}
+
+main#home>section>div.container>*:nth-child(2n):hover {
+    width: 50%;
+    background-color: #f2f7ac;
+}
+
+main#home>section>div.container>*:nth-child(2n+1):hover {
+    margin-left: 50%;
+    width: 50%;
+    background-color: #d4f3ae;
+}
+
+
+/* social  */
+
+main#social {
+    min-height: 85vh;
+}
+
+main#social>section {
+    margin: auto;
+}
+
+main#social>section>div {
+    padding: 0.3em 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* project list */
+
+li p.project-list-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+/* buttons */
+
+button {
+    border: 1px solid transparent;
+    padding: 0.5em 0.4em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: border-radius 0.5s;
+}
+
+button#btnNavbar {
+    background-color: #F5B845;
+}
+
+button#btnNavbar:hover {
+    background-color: #e6d5b5b7;
+    border: 1px solid #f5b8f5;
+    border-radius: 0.3em;
+}
+
+button#btnNavbar:active {
+    background-color: #f5b8f5;
+}
+
+button#btnStory {
+    background-color: #F5B845;
+}
+
+button#btnStory:hover {
+    background-color: #e4c5e0b7;
+    border: 1px solid #f5b8f5;
+    border-radius: 0.3em;
+}
+
+button#btnStory:active {
+    background-color: #f5b8f5;
+}
+
+
+/* Lines  */
+
+div.blueLine {
+    height: 2px;
+    background-color: blue;
+}
+
+div.greenLine {
+    height: 2px;
+    background-color: green;
+}
+
+div.redLine {
+    height: 2px;
+    background-color: red;
+}
+
+div.darkslategreyLine {
+    height: 2px;
+    background-color: darkslategrey;
+}
+
+
+/* footer */
+
+footer {
+    background-color: darkslateblue;
+    color: whitesmoke;
+    padding: 0.3em;
+}
+
+footer>* {
+    margin: auto;
+}
+
+footer div.links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+footer a {
+    text-decoration: none;
+    color: currentColor;
+}
